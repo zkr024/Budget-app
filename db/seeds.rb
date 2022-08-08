@@ -1,5 +1,5 @@
 user1 = User.create(first_name: 'Oscar', last_name: 'Bermudez')
 
-cate1 = Category.create(author_id: user1.id, name: 'Food', icon: '%')
+food = Category.create(author_id: user1.id, name: 'Food', icon: '%')
 
-purch1 = Purchase.create(author_id: user1.id, name: 'Sandwich', amount: '5')
+food.purchases.create(author_id: user1.id, name: 'Sub-way', amount: '5')

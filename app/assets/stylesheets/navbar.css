@@ -7,10 +7,16 @@
   color: #fff;
 }
 
-.back {
+.back,
+.out_btn {
   color: #fff;
 }
 
 .money {
   width: 25px;
+}
+
+.out {
+  background-color: transparent;
+  border: none;
 }

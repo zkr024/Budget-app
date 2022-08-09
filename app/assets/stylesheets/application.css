@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "novalight", sans-serif;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #f5f6f8;
+}
+
+@font-face {
+  src: url(fonts/ProximaNovaLight.ttf);
+  font-family: 'novalight';
+}
+
+@font-face {
+  src: url(fonts/ProximaNovaSemibold.ttf);
+  font-family: 'novabold';
+}

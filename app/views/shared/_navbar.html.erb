@@ -1,0 +1,19 @@
+<div class="navbar">  
+  <% if user_signed_in? %>
+    <div class="welcome">
+      Welcome:
+      <p><%= user.email %>!</p>
+    </div>
+    <div class="home">
+      <%= link_to 'Home', root_path, class: "access" %>
+    </div>
+    <div class="out">
+      <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: "access out_btn" %>
+    </div>
+  <% else %>
+    <div class="in">
+      <%= link_to 'Sign up', new_user_registration_path, class: "access" %>
+      <%= link_to 'Log in', new_user_session_path, class: "access" %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,7 @@
+<%= render partial: "shared/navbar", locals: { location: 'PURCHASES'} %>
+
+<h2>purchases</h2>
+
+<%= link_to new_category_purchase_path(@category.id) do %>
+  <button class=btn_category>New Purchase</button>
+<% end %>

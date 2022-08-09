@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 90.7vh;
+  position: relative;
+}
+
+.form_inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+  margin-top: 15px;
+  box-shadow: 1px 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.input {
+  border: none;
+  padding: 15px;
+  width: 95vw;
+  border-top: 2px solid #f5f6f8;
+}
+
+.actions {
+  align-self: end;
+  position: absolute;
+  bottom: 0;
+}
+
+.sign {
+  width: 100vw;
+  padding: 15px;
+  background-color: #5fb523;
+  border: none;
+  color: #fff;
+}
+
+.sign:hover {
+  background-color: #3778c2;
+  font-family: "novabold", sans-serif;
+}

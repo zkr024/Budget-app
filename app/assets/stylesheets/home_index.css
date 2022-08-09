@@ -1,0 +1,47 @@
+.front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 10px;
+}
+
+.title_app {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.app_name {
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+
+.access {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.in,
+.up {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.access_btn {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 25px;
+}
+
+.access_btn:hover {
+  background-color: #3778c2;
+  color: #fff;
+  font-family: "novabold", sans-serif;
+}

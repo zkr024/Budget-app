@@ -1,0 +1,15 @@
+.remember {
+  padding: 15px;
+  font-size: 15px;
+  color: #888;
+}
+
+.forgot_pass {
+  display: flex;
+  justify-content: center;
+}
+
+.forgot {
+  font-size: 15px;
+  color: #888;
+}

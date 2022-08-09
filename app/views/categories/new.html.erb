@@ -1,19 +1,21 @@
 <%= render partial: "shared/navbar", locals: { location: 'ADD CATEGORY'} %>
 
-<div>
+<div class="form_category">
   <%= form_with model: @category, url: categories_path  do |f| %>
-    <div>
-      <%= f.label :name  %>
-      <%= f.text_field :name%>
+
+    <div class="form_inputs">
+      <div>
+        <%= f.text_field :name, placeholder: "Name", class: "input"%>
+      </div>
+
+      <div>
+        <%= f.label :icon, class: "input" %>
+        <%= f.file_field :icon, class: "input"%>
+      </div>
     </div>
 
-    <div>
-      <%= f.label :icon %>
-      <%= f.text_field :icon %>
-    </div>
-
-    <div>
-      <%= f.submit "Add" %>
+    <div class="actions">
+      <%= f.submit "Add", class: "sign"%>
     </div>
   <% end %>
 </div>

@@ -38,10 +38,11 @@
   text-align: center;
   text-decoration: none;
   padding: 25px;
+  font-family: "novabold", sans-serif;
+  color: #3778c2;
 }
 
 .access_btn:hover {
   background-color: #3778c2;
   color: #fff;
-  font-family: "novabold", sans-serif;
 }

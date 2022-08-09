@@ -1,3 +1,26 @@
 <%= render partial: "shared/navbar", locals: { location: 'CATEGORIES'} %>
 
-<h1>Categories</h1>
+<div class="category_page">
+  <div class="seccion_cards">
+    <% @categories.each do |category| %>
+      <div class="category">
+        <div class="category_card">
+          <div class="icon_holder">
+            <%= image_tag(category.icon, class: "icon") %>
+          </div>
+          <div class= "category_name">
+            <%= category.name %>
+          </div>
+        </div>
+        
+        <div class="category_total">
+          $ <%= category.purchases.sum(:amount) %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <%= link_to new_category_path do%>
+    <button class=btn_category>Add category</button>
+  <% end %>
+</div>

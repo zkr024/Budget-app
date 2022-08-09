@@ -1,7 +1,16 @@
 <%= render partial: "shared/navbar", locals: { location: 'PURCHASES'} %>
 
-<h2>purchases</h2>
+<% @category.each do |category| %>
+  <h2><%= category.name %></h2>
+  <h3>Total:<%= category.purchases.sum(:amount) %></h3>
+  <br />
+  <% category.purchases.order("created_at DESC").each do |purchase| %>
+    <div><%= purchase.name %></div>
+    <div><%= purchase.amount %></div>
+  <% end %>
 
-<%= link_to new_category_purchase_path(@category.id) do %>
-  <button class=btn_category>New Purchase</button>
+  <%= link_to new_category_purchase_path(category) do %>
+    <button class=btn_category>New Purchase</button>
+  <% end %>
 <% end %>
+

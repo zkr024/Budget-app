@@ -1,7 +1,13 @@
 <div class="navbar">  
     <div class="home">
-      <%= link_to root_path do %>
-        <span class="material-symbols-outlined back">arrow_back_ios</span>
+      <% if user_signed_in? %>
+        <%= link_to categories_path do %>
+          <span class="material-symbols-outlined back">arrow_back_ios</span>
+        <% end %>
+      <% else %>
+        <%= link_to root_path do %>
+          <span class="material-symbols-outlined back">arrow_back_ios</span>
+        <% end %>
       <% end %>
     </div>
 

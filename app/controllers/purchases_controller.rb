@@ -7,5 +7,7 @@ class PurchasesController < ApplicationController
 
   def new
     @purchase = Purchase.new
+    @category = Category.where(author_id: current_user)
+    # @category_purchase = @purchase.category_purchases.build
   end
 end

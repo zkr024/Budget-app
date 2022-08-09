@@ -1,1 +1,33 @@
 <%= render partial: "shared/navbar", locals: { location: 'NEW PURCHASE'} %>
+
+<div class="form_category">
+  <%= form_with model: @purchase, url: category_purchases_path  do |f| %>
+
+    <div class="form_inputs">
+      <div>
+        <%= f.text_field :name, placeholder: "Name", class: "input"%>
+      </div>
+
+      <div>
+        <%= f.number_field :name, placeholder: "Price $", class: "input"%>
+      </div>
+
+      <%= fields_for(@category_purchase) do |cat| %>
+        <div>
+          <%= cat.label "Categories" %>
+          <%= collection_select(:categories, :id, @category, :id, :name, {}, {:multiple => true})%>
+        </div>
+      <% end %>
+
+      <div>
+        <%= f.label :categories %>
+        <%= f.collection_select :category_ids, @category.order(:name), :id, :name, {}, { class: "select2", multiple: true }%>
+      </div>
+
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Add", class: "sign"%>
+    </div>
+  <% end %>
+</div>

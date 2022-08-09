@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <%= render partial: "shared/navbar", locals: {user: current_user} %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>

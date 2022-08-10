@@ -1,0 +1,32 @@
+.purchase {
+  display: flex;
+  flex-direction: column;
+  height: 92.8vh;
+}
+
+.transactions {
+  height: 100%;
+  padding: 10px;
+}
+
+.item_info,
+.transaction {
+  display: flex;
+  box-shadow: 1px 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.05);
+  margin: 5px;
+}
+
+.item_info div,
+.transaction div {
+  width: 50%;
+  text-align: center;
+}
+
+.item_info div {
+  font-size: 20px;
+  font-family: "novabold", sans-serif;
+}
+
+.add_purchase {
+  align-items: end;
+}

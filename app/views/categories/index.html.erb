@@ -1,0 +1,15 @@
+<%= render partial: "shared/navbar", locals: { location: 'CATEGORIES'} %>
+
+<div class="category_page">
+  <div class="seccion_cards">
+    <% @categories.each do |category| %>
+      <%= link_to category_purchases_path(category.id) do %>
+        <%= render partial: "shared/categoryCard", locals: { category: category} %>
+      <% end %>  
+    <% end %>
+  </div>
+
+  <%= link_to new_category_path do %>
+    <button class=btn_category>Add category</button>
+  <% end %>
+</div>

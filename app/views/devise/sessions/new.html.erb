@@ -1,0 +1,33 @@
+<%= render partial: "shared/navbar", locals: { location: 'LOGIN'} %>
+
+<div class="form">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form_inputs">
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "input" %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", class: "input" %>
+      </div>
+    </div>
+
+    <div class="remember">
+      <% if devise_mapping.rememberable? %>
+        <div class="field">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end %>
+    </div>
+    
+    <div class="forgot_pass">
+      <%= render "devise/shared/links" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Log in", class: "sign" %>
+    </div>
+  <% end %>
+</div>
+

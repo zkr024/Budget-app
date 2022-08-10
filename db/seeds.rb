@@ -1,0 +1,1 @@
+user = User.create(full_name: 'test test', email: 'test@test.com', password: 'password', password_confirmation: 'password')

@@ -1,0 +1,27 @@
+<div class="navbar">  
+    <div class="home">
+      <% if user_signed_in? %>
+        <%= link_to categories_path do %>
+          <span class="material-symbols-outlined back">arrow_back_ios</span>
+        <% end %>
+      <% else %>
+        <%= link_to root_path do %>
+          <span class="material-symbols-outlined back">arrow_back_ios</span>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="page"><%= location %></div>
+
+    <% if user_signed_in? %>
+      <div class="home">
+        <%= button_to destroy_user_session_path, method: :delete, class: "out" do %>
+          <span class="material-symbols-outlined out_btn">logout</span>
+        <% end %>
+      </div>
+    <% else %>
+      <div class="image">
+        <%= image_tag("money.png", class: "money") %>
+      </div>
+    <% end %>
+</div>

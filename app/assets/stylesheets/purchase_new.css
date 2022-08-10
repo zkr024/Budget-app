@@ -1,0 +1,14 @@
+.select_category {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.category_top {
+  font-family: "novabold", sans-serif;
+  font-size: 15px;
+}
+
+.category_info {
+  font-size: 12px;
+}

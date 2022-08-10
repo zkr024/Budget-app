@@ -1,4 +1,4 @@
-# Budget-app
+# Budget-app.
 
 ## Built With:
 

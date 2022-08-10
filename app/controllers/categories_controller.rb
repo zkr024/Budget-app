@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @categories = Category.where(author_id: current_user)
+    @categories = Category.includes(icon_attachment: :blob).where(author_id: current_user)
   end
 
   def new

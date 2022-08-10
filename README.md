@@ -46,6 +46,9 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgments
+- Based on [Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) design.
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

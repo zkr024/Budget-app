@@ -19,6 +19,11 @@ To get a local copy up and running follow these simple example steps:
  > rails s
  
  > access to http://localhost:3000/ in your browser
+ 
+ 
+ ## Live Demo
+
+ > [Click here](https://morning-oasis-24983.herokuapp.com/)
 
 
 ## Author
